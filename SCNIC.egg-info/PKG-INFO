@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: SCNIC
+Version: 0.6.3
+Summary: A tool for finding and summarizing modules of highly correlated observations in compositional data
+Home-page: https://github.com/lozuponelab/SCNIC/
+Download-URL: https://github.com/lozuponelab/SCNIC/tarball/0.6.3
+Author: Lozupone Lab
+Author-email: lozuponelab.dev@olucdenver.onmicrosoft.com
+License-File: LICENSE
