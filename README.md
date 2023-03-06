@@ -1,5 +1,23 @@
 [![PyPI version](https://badge.fury.io/py/SCNIC.svg)](https://badge.fury.io/py/SCNIC) [![Travis](https://img.shields.io/travis/shafferm/SCNIC.svg)](https://travis-ci.org/shafferm/SCNIC) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9013f85974f84a06b544598aa934e032)](https://www.codacy.com/app/shafferm/SCNIC?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shafferm/SCNIC&amp;utm_campaign=Badge_Grade) [![Coveralls](https://img.shields.io/coveralls/shafferm/SCNIC.svg)](https://coveralls.io/github/shafferm/SCNIC)
 
+## What is this fork for
+
+- Fix pandas error in the script.
+- Add pipe script for qiime2 output in scripts/
+
+### How to use the pipe
+
+```bash
+# Convert qiime output to biom format
+conda activate qiime2-yyyy-mm
+./scripts/01_prep4qiime2.sh table.qza taxonomy.qza
+
+# Exec SCNIC for each level
+conda deactivate
+conda activate SCNIC
+./scripts/02_SCNIC.sh ./q2_to_SCNIC
+```
+
 # SCNIC
 Sparse Cooccurrence Network Investigation for Compositional data
 Pronounced 'scenic'.
